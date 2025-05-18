@@ -643,11 +643,6 @@ button {
 }
 
 
-
-/*.hidden {*/
-/*  display: none !important;*/
-/*}*/
-
 footer {
   background-color: black;
   display: flex;
@@ -655,4 +650,9 @@ footer {
   margin: 0;
   color: white;
   justify-content: center;
+}
+
+/* hide any element with the .hidden class */
+.hidden {
+  display: none !important;
 }
