@@ -21,7 +21,7 @@
   <header>
     <div id="date-display">Jeudi 22 Mai 2025</div>
     <span>Édition spéciale</span>
-    <img src="{{ url_for('static', filename='images/tmt.jpeg') }}" class="my-logo" alt="TMT Logo">
+    <img src="static/images/tmt.jpeg" class="my-logo" alt="TMT Logo">
     <p>Vos actualités impertinentes du quotidien.</p>
   </header>
 
@@ -70,7 +70,7 @@
 
       <div class="box deux">
       <video controls autoplay muted loop width="100%">
-        <source src="{{ url_for('static', filename='images/front-page.mp4') }}" type="video/mp4">
+        <source src="static/images/front-page.mp4" type="video/mp4">
       </video>
     </div>
 
@@ -85,40 +85,9 @@
     </div>
 </div>
 
-<!--&lt;!&ndash; 5 Side-by-Side Articles &ndash;&gt;-->
-<!--<div id="article-grid">-->
-<!--  <div class="fake-article">-->
-<!--    <h1>ACTU</h1>-->
-<!--    <img src="{{ url_for('static', filename='images/leo-mit.jpg') }}" alt="Article 1">-->
-<!--    <h2>Fierté nationale</h2>-->
-<!--    <p>Le jeune nageur Leon Marchand, star de la natation, a récemment été admis à la prestigieuse université du MIT.</p>-->
-<!--  </div>-->
-
-<!--  <div class="fake-article">-->
-<!--    <h2>Le retour du Pogs</h2>-->
-<!--    <p>Un mouvement underground relance les tournois de pogs dans les sous-sols de Montmartre.</p>-->
-<!--  </div>-->
-
-<!--  <div class="fake-article">-->
-<!--    <h2>Sexe ou bouffe?</h2>-->
-<!--    <p>Une récente enquête révèle que 82% des Français refusent de choisir. On vous explique pourquoi.</p>-->
-<!--  </div>-->
-
-<!--  <div class="fake-article">-->
-<!--    <img src="{{ url_for('static', filename='images/bob_ross.jpg') }}" alt="Photo de Bob Ross">-->
-<!--    <h2>Bob Ross, l'expo photo</h2>-->
-<!--    <p>Des photos de la vie du peintre recemment retrouvées, bientot à la MEP.</p>-->
-<!--  </div>-->
-
-<!--  <div class="fake-article">-->
-<!--    <img src="{{ url_for('static', filename='images/tech-innovation.jpg') }}" alt="Article 5">-->
-<!--    <h2>Innovation Tech</h2>-->
-<!--    <p>Les start-ups françaises ont levé 200 M€ ce trimestre pour accélérer leurs projets d'intelligence artificielle.</p>-->
-<!--  </div>-->
-<!--</div>-->
     <div id="article-grid">
       <div class="fake-article">
-        <img src="{{ url_for('static', filename='images/leo-mit.jpg') }}" alt="Article 1">
+        <img src="static/images/leo-mit.jpg" alt="Article 1">
         <h2>Fierté nationale</h2>
         <p>Le jeune Leon Marchand, star de la natation, a récemment été admis à la prestigieuse université du MIT.</p>
         <h2>Tendances homme de l’année</h2>
@@ -131,7 +100,7 @@
         <p>Les recettes préferées de la Rédaction, avec Bro...le livre de cuisine: Gnocchis au gorgonzola, Quiche aux poireaux, et bien plus!</p>
       </div>
       <div class="fake-article">
-        <img src="{{ url_for('static', filename='images/bob_ross.jpg') }}" alt="Photo de Bob Ross">
+        <img src="static/images/bob_ross.jpg" alt="Photo de Bob Ross">
         <h2>Bob Ross, regards inédits</h2>
         <p>Des clichés rares de la vie du peintre, récemment retrouvés, bientôt à la MEP.</p>
       </div>
@@ -140,7 +109,7 @@
         <p>Une récente enquête révèle que 82% des Français refusent de choisir. On vous explique pourquoi.</p>
       </div>
       <div class="fake-article">
-        <img src="{{ url_for('static', filename='images/character.jpg') }}" alt="Funny Character" class="small-img">
+        <img src="static/images/character.jpg" alt="Funny Character" class="small-img">
         <h2>Busiu La Debrouille toujours #1 des ventes</h2>
         <p>Le livre jeunesse, paru plus tôt cette année, a été réédité pour répondre à l’engouement du public.</p>
          <h2>Mot de l'Editrice</h2>
@@ -158,7 +127,7 @@
     <h2>Notre recommendation musicale du jour</h2>
     <p><strong>"NEED TO ADD"</strong> by ?</p>
     <audio controls>
-      <source src="{{ url_for('static', filename='music/midnight_city.mp3') }}" type="audio/mpeg">
+      <source src="static/music/midnight_city.mp3" type="audio/mpeg">
     </audio>
   </section>
 
@@ -176,13 +145,13 @@
       <h2>Nos Jeux</h2>
       <div class="game-thumbs">
         <div class="game-block">
-          <img src="{{ url_for('static', filename='images/connections-logo.jpg') }}"
+          <img src="static/images/connections-logo.jpg"
                class="game-logo" alt="Connections Logo">
 <!--          <button class="game-button" onclick="showGame('connections')">JOUER</button>-->
           <button onclick="showModalGame('connections')">JOUER</button>
         </div>
         <div class="game-block">
-          <img src="{{ url_for('static', filename='images/wordle-logo.jpg') }}"
+          <img src="static/images/wordle-logo.jpg"
                class="game-logo" alt="Wordle Logo">
 <!--          <button class="game-button" onclick="showGame('wordle')">JOUER</button>-->
           <button onclick="showModalGame('wordle')">JOUER</button>
@@ -214,9 +183,9 @@
 </div>
       </div>
 
-<script src="{{ url_for('static', filename='js/connections.js') }}"></script>
-<script src="{{ url_for('static', filename='js/wordle.js') }}"></script>
-<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script src="static/js/connections.js"></script>
+<script src="static/js/wordle.js') }}"></script>
+<script src="static/js/main.js') }}"></script>
 
 <footer>
   <p>© 2025 Busiu Editions</p>
