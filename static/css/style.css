@@ -208,22 +208,6 @@ nav {
   margin: 0 50px;    /* 0 top/bottom, 16px left/right */
 }
 
-
-/*#article-grid {*/
-/*  display: flex;*/
-/*  gap: 20px;*/
-/*  justify-content: space-between;*/
-/*  padding: 40px 20px;*/
-/*}*/
-
-/*.fake-article {*/
-/*  flex: 1;*/
-/*  background: white;*/
-/*  border-radius: 10px;*/
-/*  padding: 20px;*/
-/*  text-align: left;*/
-/*}*/
-
 /* CSS */
 #article-grid {
   display: grid;
@@ -243,7 +227,6 @@ nav {
   display: block;
 }
 
-/* keep your area assignments */
 .fake-article:nth-child(1) { grid-area: a1; } /* spans rows 1–3 col 1 */
 .fake-article:nth-child(2) { grid-area: a2; } /* row 1 col 2 */
 .fake-article:nth-child(3) { grid-area: a3; } /* row 2 col 2 */
@@ -263,9 +246,6 @@ nav {
   overflow: hidden;
   text-align: left;
 }
-/*!* optional: make any images or headings inside flex nicely *!*/
-/*.fake-article img { max-width: 100%; height: auto; }*/
-/*.fake-article h2 { font-family: 'Cheltenham Bold Headline', serif; }*/
 
 
 .fake-article img {
@@ -287,56 +267,6 @@ nav {
   width: 150px;      /* or 50%, or whatever you like */
   height: auto;
 }
-
-
-/*!* 1) Define the grid on the container *!*/
-/*#article-grid {*/
-/*  display: grid;*/
-/*  grid-template-columns: 2fr 1fr;    !* left column twice as wide as right *!*/
-/*  grid-template-rows:*/
-/*    auto auto auto;                  !* three “rows” of content *!*/
-/*  grid-template-areas:*/
-/*    "a1 a4"                          !* row 1: article-1 on left, article-4 on right *!*/
-/*    "a1 a4"                          !* row 2: same, so a1 & a4 span 2 rows *!*/
-/*    "a2 a4"                          !* row 3: a2 on left, a4 still on right *!*/
-/*    "a3 a4";                         !* row 4: a3 on left, a4 spans row 4 too *!*/
-/*  gap: 16px;*/
-/*}*/
-
-/*!* 2) Assign each .fake-article to an area *!*/
-/*.fake-article:nth-child(1) { grid-area: a1; }  !* medium, left *!*/
-/*.fake-article:nth-child(2) { grid-area: a2; }  !* stacked under 1 *!*/
-/*.fake-article:nth-child(3) { grid-area: a3; }  !* under 2 *!*/
-/*.fake-article:nth-child(4) { grid-area: a4; }  !* big, spans 4 rows *!*/
-/*.fake-article:nth-child(5) {                   !* fallback for a 5th item *!*/
-/*  grid-column: 1 / -1;                         !* full width below *!*/
-/*  grid-row: 5;*/
-/*}*/
-
-/*!* 3) Control “medium” versus “big” via how many rows/cols they span *!*/
-/*.fake-article:nth-child(1),*/
-/*.fake-article:nth-child(2),*/
-/*.fake-article:nth-child(3) {*/
-/*  !* these are your “medium” cards, they'll size to their grid cell *!*/
-/*}*/
-
-/*.fake-article:nth-child(4) {*/
-/*  !* this one is “big” because it covers the entire right half, 4 rows tall *!*/
-/*}*/
-
-/*!* Optional: set a min-height so the “medium” cards stay a minimum size *!*/
-/*.fake-article {*/
-/*  background: #fff;*/
-/*  border: 1px solid #ddd;*/
-/*  padding: 12px;*/
-/*  min-height: 200px;     !* tweak to taste *!*/
-/*  overflow: hidden;*/
-/*}*/
-
-/*.fake-article:nth-child(1) img {*/
-/*  max-width: 40%;  !* or whatever width you like *!*/
-/*  height: auto;      !* keeps the aspect ratio *!*/
-/*}*/
 
 #music {
   margin-top: 40px;
@@ -438,7 +368,6 @@ button {
 /* ——— CONNECTIONS ——— */
 #connections-grid {
   display: grid;
-  /* 4 columns, each between 80px and 120px wide */
   grid-template-columns: repeat(4, minmax(80px, 120px));
   gap: 12px;
   justify-content: center;
@@ -450,7 +379,7 @@ button {
   color: #333;
   border: 1px solid #ccc;
   border-radius: 4px;
-  height: 60px;             /* taller tiles */
+  height: 60px;             
   padding: 0 10px;
   display: flex;
   align-items: center;
@@ -490,7 +419,6 @@ button {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.9rem;
-  /* no extra margin needed; gap handles spacing */
 }
 
 /* row of tiles under the title */
@@ -500,11 +428,9 @@ button {
   justify-content: center;
 }
 
-/* keep the same tile size you’ve been using */
 .found-tile {
-  /*box-sizing: border-box;       !* include padding & border in width *!*/
-  background-color: #ececec;    /* default, will be overridden inline */
-  color: #333;                  /* default, overridden inline to #000 */
+  background-color: #ececec;    
+  color: #333;                  
   border: 1px solid #ccc;
   border-radius: 4px;
   height: 60px;
@@ -526,42 +452,6 @@ button {
   font-size: 0.9rem;
   margin-right: 4px;
 }
-
-/*!* ——— WORDLE ——— *!*/
-/*#wordle-grid {*/
-/*  display: grid;*/
-/*  !* 5 columns, each between 60px and 100px wide *!*/
-/*  grid-template-columns: repeat(5, minmax(60px, 100px));*/
-/*  gap: 5px;*/
-/*  justify-content: center;*/
-/*  margin: 20px auto;*/
-/*}*/
-
-/*.tile {*/
-/*  background-color: #f0f0f0;*/
-/*  border: 3px solid #555;*/
-/*  width: 80px;              !* fixed square *!*/
-/*  height: 80px;*/
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*  font-size: 1.5rem;        !* larger letters *!*/
-/*  text-transform: uppercase;*/
-/*  user-select: none;*/
-/*}*/
-
-/*!* feedback colors for Wordle *!*/
-/*.correct { background-color: #6aaa64; color: white; }*/
-/*.present { background-color: #c9b458; color: white; }*/
-/*.absent  { background-color: #787c7e; color: white; }*/
-
-/*.group-label {*/
-/*  grid-column: span 4;*/
-/*  font-size: 18px;*/
-/*  font-weight: bold;*/
-/*  color: #333;*/
-/*  margin-top: 10px;*/
-/*}*/
 
 .flex-container {
   display: flex;
