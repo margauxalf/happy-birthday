@@ -7,10 +7,10 @@ const DIFFICULTY_COLORS = {
 };
 
 const connectionGroups = [
-  { name: "Horribles surnoms de couple", words: ["Lapin","Biche","Chat","Bébé"],   difficulty: "yellow"  },
-  { name: "Lieux de fornication",         words: ["Lit","Parc","Douche","Toilettes"], difficulty: "green"   },
-  { name: "Cars",                          words: ["Ford","Tesla","BMW","Toyota"],         difficulty: "blue"    },
-  { name: "Malo[...]",                     words: ["Tru","Coeur","Cul","Coccyx"],        difficulty: "purple"  }
+  { name: "Horribles surnoms de couple", words: ["Bébé","Biche","Lapin","Chat"],   difficulty: "yellow"  },
+  { name: "Lieux de fornication",         words: ["Douche","Lit","Parc","Toilettes"], difficulty: "green"   },
+  { name: "En lien avec la Bretagne",     words: ["Aber","Biniou","Gallec","Reverdie"],   difficulty: "blue"    },
+  { name: "Malo[...]",                     words: ["Coeur","Coccyx","Cul","Tru"],     difficulty: "purple"  }
 ];
 
 let selectedConn       = [];
