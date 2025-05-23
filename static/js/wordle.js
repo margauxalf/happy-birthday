@@ -1,6 +1,6 @@
 // wordle.js
 
-let wordleSecret = "CADUC";
+let wordleSecret = "CACAS";
 let wordleRow    = 0;
 let gameOver     = false;
 
